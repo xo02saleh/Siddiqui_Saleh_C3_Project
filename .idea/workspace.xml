@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="af4f1eb6-9475-4a45-9417-d5a7d3666c5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RestaurantTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RestaurantTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,26 +48,7 @@
     "last_opened_file_path": "D:/Github/Siddiqui_Saleh_C3_Project"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.RestaurantTest">
-    <configuration name="RestaurantServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Restaurant" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RestaurantServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestaurantServiceTest.searching_for_existing_restaurant_should_return_expected_restaurant_object" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Restaurant" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RestaurantServiceTest" />
-      <option name="METHOD_NAME" value="searching_for_existing_restaurant_should_return_expected_restaurant_object" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RestaurantTest.total_item_cost_must_be_decrease_when_items_are_removed">
     <configuration name="RestaurantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restaurant" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,13 +78,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestaurantTest.total_item_cost_must_be_decrease_when_items_are_removed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restaurant" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestaurantTest" />
+      <option name="METHOD_NAME" value="total_item_cost_must_be_decrease_when_items_are_removed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantTest.total_item_cost_must_be_increase_when_items_are_added" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restaurant" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestaurantTest" />
+      <option name="METHOD_NAME" value="total_item_cost_must_be_increase_when_items_are_added" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestaurantTest.total_item_cost_must_be_decrease_when_items_are_removed" />
+        <item itemvalue="JUnit.RestaurantTest.total_item_cost_must_be_increase_when_items_are_added" />
         <item itemvalue="JUnit.RestaurantTest" />
         <item itemvalue="JUnit.RestaurantTest.is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time" />
         <item itemvalue="JUnit.RestaurantTest.is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time" />
-        <item itemvalue="JUnit.RestaurantServiceTest" />
-        <item itemvalue="JUnit.RestaurantServiceTest.searching_for_existing_restaurant_should_return_expected_restaurant_object" />
       </list>
     </recent_temporary>
   </component>

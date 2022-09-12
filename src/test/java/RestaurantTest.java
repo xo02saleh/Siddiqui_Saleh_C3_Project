@@ -6,11 +6,14 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.awt.*;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RestaurantTest {
     Restaurant restaurant;
+    List<Item> spoof = new ArrayList<>();
     //REFACTOR ALL THE REPEATED LINES OF CODE
     @BeforeEach
     public void Setup() throws restaurantNotFoundException {
@@ -69,38 +72,18 @@ class RestaurantTest {
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>ORDER COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     @Test
     public void total_item_cost_must_be_increase_when_items_are_added (){
-        Restaurant restaurant1 = null;
-        int total = 500;
-        getOrderValue totalCost = restaurant.getMenu(MenuItem,total);
-
+        spoof = restaurant.getMenu();
+        assertEquals(1138,restaurant.getOrderValue(spoof));
     }
-
-
-
-
-
-
 
 
     @Test
     public void total_item_cost_must_be_decrease_when_items_are_removed (){
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        spoof = restaurant.getMenu();
+        int total = restaurant.getOrderValue(spoof);
+        int afterTotal = spoof.get(1).getPrice();
+        spoof.remove(1);
+        assertEquals(total-afterTotal,restaurant.getOrderValue(spoof));
+    }
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>ORDER COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 }

@@ -15,6 +15,9 @@ public class Restaurant {
         this.location = location;
         this.openingTime = openingTime;
         this.closingTime = closingTime;
+        //default menu items
+        this.menu.add(new Item("Pizza", 500));
+        this.menu.add(new Item("Burger", 250));
     }
 
     public LocalTime getOpeningTime() {
@@ -83,6 +86,16 @@ public class Restaurant {
 
     public String getName() {
         return name;
+    }
+
+
+    public int getOrderValue(List<Item> item) {
+        int totalValue = 0;
+        for (Item myItem : item) {
+            totalValue += myItem.getPrice();
+        }
+        return totalValue;
+
     }
 
 }
