@@ -1,6 +1,10 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.awt.*;
 import java.time.LocalTime;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -59,4 +63,44 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>ORDER COST<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @Test
+    public void total_item_cost_must_be_increase_when_items_are_added (){
+        Restaurant restaurant1 = null;
+        int total = 500;
+        getOrderValue totalCost = restaurant.getMenu(MenuItem,total);
+
+    }
+
+
+
+
+
+
+
+
+    @Test
+    public void total_item_cost_must_be_decrease_when_items_are_removed (){
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
